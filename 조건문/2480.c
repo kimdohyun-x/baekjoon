@@ -7,16 +7,16 @@ int main(){
     int a,b,c;
     scanf("%d %d %d", &a, &b, &c);
 
-    if(a==b&&a==c){
+    if(a==b&&a==c){     // 같은 눈 3개
         printf("%d", 10000+a*1000);
     }
-    else if(a==b||a==c||b==c){
-        if(b==c){
-            a=b;
+    else if(a==b||a==c||b==c){      // 같은 눈 2개
+        if(b==c){                   // b==c가 아니면 a와 b 혹은 a와 c가 같은 눈일 것이므로 a로 구한다.
+            a=b;                    // b==c여도 코드를 줄이기 위해 b를 a에 대입시켜 a로 구한다.
         }
         printf("%d", 1000+100*a);
     }
-    else{
+    else{               // 모두 다른 눈
         int max=a;
         if(b>max){
             max=b;
