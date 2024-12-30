@@ -23,9 +23,9 @@ int main(){
         if(max<arr[i]) max=arr[i];      //최댓값 구하기. 여기서 아래 반복문 넣어버리면 max가 바뀌므로 x!!
     }
     for(int i=0; i<n; i++){
-        sum+=arr[i]/(float)max*100;  
+        sum+=arr[i]/(float)max*100;     // 새 점수로 변환환
     }
     
-    printf("%f", sum/n);
+    printf("%f", sum/n);                // 평균
     return 0;
 }
