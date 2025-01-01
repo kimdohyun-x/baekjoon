@@ -12,7 +12,7 @@ int main() {
 
     for(int i=0; s[i]!=0; i++){
         s[i]=s[i]-'A';      // 알파벳을 숫자로 변환
-        s[i]=alpha[s[i]];   //
+        s[i]=alpha[s[i]];   // 알파벳에 따른 소요 시간을 배열에 대입
         sum+=s[i];
     }
 
